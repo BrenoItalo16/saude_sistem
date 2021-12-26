@@ -39,6 +39,7 @@ class AreaCriarPostagem extends StatelessWidget {
             height: 10,
             thickness: 0.5,
           ),
+          // ignore: sized_box_for_whitespace
           Container(
             height: 40,
             child: Row(
