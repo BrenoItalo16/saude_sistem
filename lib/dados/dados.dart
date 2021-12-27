@@ -19,8 +19,10 @@ Usuario usuarioAtual = Usuario(
 /* Lista de usuários online */
 List<Usuario> usuariosOnline = [
   Usuario(
-      nome: "José Renato de almeida",
-      urlImagem: "https://source.unsplash.com/UJLAMjEjISo/800x600"),
+      nome: "Cidney",
+      urlImagem:
+          "https://scontent.fmvf1-1.fna.fbcdn.net/v/t1.6435-9/36939816_125916098316142_2279383566833942528_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFlAg8CsEpvEBD7-R2QjnX-WsjB8d0BdSNayMHx3QF1I0M_cybsv5sNWRzp8OSvOEd2f36xqNyonANkGZudR_W0&_nc_ohc=p5FHRo4MQmEAX-QLYT0&_nc_ht=scontent.fmvf1-1.fna&oh=00_AT-mZQkWZia_M8EupBM9l1VqfZDDABwIPL6ppDzTbTMqFg&oe=61EDB878"),
+//          "https://s2.glbimg.com/-vf1ehZ6-us-LP3ZcAbROD-JcyM=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/Q/i/EZhHtFRHqTv1KkA0RjPw/2019-01-16-chevrolet-tracker-2.jpg"),
   Usuario(
       nome: "Maria Almeida",
       urlImagem: "https://source.unsplash.com/0wRXAXqIp58/800x600"),
@@ -48,32 +50,48 @@ List<Usuario> usuariosOnline = [
 List<Estoria> estorias = [
   Estoria(
     usuario: usuariosOnline[0],
-    urlImagem: "https://source.unsplash.com/JMWjOup32Fk/800x600",
+    urlImagem:
+        "https://s2.glbimg.com/-vf1ehZ6-us-LP3ZcAbROD-JcyM=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/Q/i/EZhHtFRHqTv1KkA0RjPw/2019-01-16-chevrolet-tracker-2.jpg",
+//    urlImagem: "https://source.unsplash.com/JMWjOup32Fk/800x600",
     foiVisualizado: true,
   ),
   Estoria(
     usuario: usuariosOnline[1],
-    urlImagem: "https://source.unsplash.com/no_TCkPUq_s/800x600",
+    urlImagem:
+        "https://img.freepik.com/fotos-gratis/teste-de-carro-sedan-vermelho-na-estrada_114579-4061.jpg?size=626&ext=jpg",
+//    urlImagem: "https://source.unsplash.com/no_TCkPUq_s/800x600",
     foiVisualizado: true,
   ),
   Estoria(
       usuario: usuariosOnline[2],
-      urlImagem: "https://source.unsplash.com/6dX5TPPM34M/800x600"),
+      urlImagem:
+          "https://images.tcdn.com.br/img/img_prod/494876/ambulancia_tipo_d_furgao_longo_de_teto_alto_acima_de_10m_1085_1_da8cdfd2c14fa437752765c502131c5b.jpg"),
+//      urlImagem: "https://source.unsplash.com/6dX5TPPM34M/800x600"),
   Estoria(
       usuario: usuariosOnline[3],
-      urlImagem: "https://source.unsplash.com/PO7CGnoDFUI/800x600"),
+      urlImagem:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdi07FzYb58RBgK_2UAaotJ7O2hix53NzPwA&usqp=CAU"),
+//      urlImagem: "https://source.unsplash.com/PO7CGnoDFUI/800x600"),
   Estoria(
       usuario: usuariosOnline[4],
-      urlImagem: "https://source.unsplash.com/rewyZqUwAqY/800x600"),
+      urlImagem:
+          "https://images.tcdn.com.br/img/img_prod/494876/ambulancia_tipo_d_furgao_longo_de_teto_alto_acima_de_10m_1085_1_da8cdfd2c14fa437752765c502131c5b.jpg"),
+//      urlImagem: "https://source.unsplash.com/1HpQU1evGK8/800x600"),
   Estoria(
       usuario: usuariosOnline[5],
-      urlImagem: "https://source.unsplash.com/1HpQU1evGK8/800x600"),
+      urlImagem:
+          "https://s2.glbimg.com/-vf1ehZ6-us-LP3ZcAbROD-JcyM=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/Q/i/EZhHtFRHqTv1KkA0RjPw/2019-01-16-chevrolet-tracker-2.jpg"),
+//      urlImagem: "https://source.unsplash.com/1HpQU1evGK8/800x600"),
   Estoria(
       usuario: usuariosOnline[6],
-      urlImagem: "https://source.unsplash.com/W9z_628BBpc/800x600"),
+      urlImagem:
+          "https://images.tcdn.com.br/img/img_prod/494876/ambulancia_tipo_d_furgao_longo_de_teto_alto_acima_de_10m_1085_1_da8cdfd2c14fa437752765c502131c5b.jpg"),
+//      urlImagem: "https://source.unsplash.com/W9z_628BBpc/800x600"),
   Estoria(
       usuario: usuariosOnline[7],
-      urlImagem: "https://source.unsplash.com/DOb-2jd0sbc/800x600"),
+      urlImagem:
+          "https://image.freepik.com/fotos-gratis/um-carro-azul-sedan-dirigindo-na-estrada-em-um-tempo-nublado_114579-4053.jpg"),
+//      urlImagem: "https://source.unsplash.com/DOb-2jd0sbc/800x600"),
 ];
 /*
 /* Lista de postagens */
