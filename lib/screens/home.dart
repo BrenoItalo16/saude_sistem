@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:saude/components/area_criar_postagem.dart';
+import 'package:saude/components/area_estoria.dart';
 import 'package:saude/components/circle_buttom.dart';
 import 'package:saude/dados/dados.dart';
 import 'package:saude/ultilities/color_palette.dart';
@@ -47,6 +48,15 @@ class _HomeState extends State<Home> {
           ),
           SliverToBoxAdapter(
             child: AreaCriarPostagem(usuario: usuarioAtual),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(0, 10, 0, 5),
+            sliver: SliverToBoxAdapter(
+              child: AreaEstoria(
+                usuario: usuarioAtual,
+                estorias: estorias,
+              ),
+            ),
           ),
           SliverToBoxAdapter(
             child: Container(
