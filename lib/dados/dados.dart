@@ -93,7 +93,7 @@ List<Estoria> estorias = [
           "https://image.freepik.com/fotos-gratis/um-carro-azul-sedan-dirigindo-na-estrada-em-um-tempo-nublado_114579-4053.jpg"),
 //      urlImagem: "https://source.unsplash.com/DOb-2jd0sbc/800x600"),
 ];
-/*
+
 /* Lista de postagens */
 List<Postagem> postagens = [
   Postagem(
@@ -166,4 +166,3 @@ List<Postagem> postagens = [
       comentarios: 25,
       compartilhamentos: 3),
 ];
-*/

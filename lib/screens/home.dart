@@ -3,7 +3,9 @@ import 'package:line_icons/line_icons.dart';
 import 'package:saude/components/area_criar_postagem.dart';
 import 'package:saude/components/area_estoria.dart';
 import 'package:saude/components/circle_buttom.dart';
+import 'package:saude/components/post_card.dart';
 import 'package:saude/dados/dados.dart';
+import 'package:saude/models/modelos.dart';
 import 'package:saude/ultilities/color_palette.dart';
 
 class Home extends StatefulWidget {
@@ -58,12 +60,15 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          SliverToBoxAdapter(
-            child: Container(
-              color: Colors.grey,
-              height: 1300,
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (context, indice) {
+                Postagem postagem = postagens[indice];
+                return PostCard(postagem: postagem);
+              },
+              childCount: postagens.length,
             ),
-          )
+          ),
         ],
       ),
     );
