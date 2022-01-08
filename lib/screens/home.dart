@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            backgroundColor: Colors.white,
+            backgroundColor: ColorsPalette.facebookBlue,
             //expandedHeight: 250,
             floating: true,
             centerTitle: false,
