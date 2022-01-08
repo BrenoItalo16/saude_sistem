@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:saude/components/cabecalho_postagem.dart';
+import 'package:saude/components/estatisticas_postagem.dart';
 import 'package:saude/models/modelos.dart';
 
 class PostCard extends StatelessWidget {
@@ -34,7 +35,11 @@ class PostCard extends StatelessWidget {
             child: CachedNetworkImage(
               imageUrl: postagem.urlImagem,
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: EstatisticasPostagem(postagem: postagem),
+          ),
         ],
       ),
     );
