@@ -16,10 +16,10 @@ class AreaEstoria extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      color: Colors.white,
+      color: Colors.grey[200],
       child: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-        scrollDirection: Axis.horizontal,
+        scrollDirection: Axis.horizontal, //!Lista horizontal
         itemCount: 1 + estorias.length, //1+8 = 9
         itemBuilder: (context, indice) {
           if (indice == 0) {

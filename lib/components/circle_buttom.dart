@@ -1,35 +1,60 @@
 import 'package:flutter/material.dart';
+import 'package:saude/ultilities/color_palette.dart';
 
 class CircleButtom extends StatelessWidget {
-
-  final IconData icone;
-  final double iconeTamanho;
+  final double buttomLength;
   final VoidCallback onPressed;
-
-
-  const CircleButtom(
-      { 
-        Key? key,
-        required this.icone,
-        required this.iconeTamanho,
-        required this.onPressed, 
-      }
-    ) : super(key: key);
+  final String buttomText;
+  const CircleButtom({
+    Key? key,
+    required this.buttomLength,
+    required this.onPressed,
+    required this.buttomText,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  shape: BoxShape.circle,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
+      child: Center(
+        child: ElevatedButton(
+          onPressed: onPressed, //!Função onPressed
+          style: ElevatedButton.styleFrom(
+            padding: EdgeInsets.zero,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
+            ),
+          ),
+          child: Ink(
+            decoration: BoxDecoration(
+              //*Sombra
+              // boxShadow: const <BoxShadow>[
+              //   BoxShadow(
+              //       color: Colors.red,
+              //       blurRadius: 15.0,
+              //       offset: Offset(0.0, 0.75))
+              // ],
+              //*Gradiente
+              gradient: const LinearGradient(
+                colors: [ColorsPalette.brenoOrange, ColorsPalette.brenoPink],
+              ),
+              borderRadius: BorderRadius.circular(5),
+            ),
+            child: Container(
+              width: buttomLength, //!tamanho do butão
+              height: 40,
+              alignment: Alignment.center,
+              child: Text(
+                buttomText, //!Texto do botão
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
                 ),
-                margin: const EdgeInsets.all(6),
-                child: IconButton(
-                  onPressed: onPressed,
-                  icon: Icon(icone),
-                  iconSize: iconeTamanho,
-                  color: Colors.black87,
-                ),
-              );
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
