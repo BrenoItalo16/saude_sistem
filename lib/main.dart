@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-
-import 'screens/home.dart';
+import 'package:saude/telas/login.dart';
 
 void main() {
-  runApp(
-    // ignore: prefer_const_constructors
-    MaterialApp(
-        title: "Sistem saúde",
-        debugShowCheckedModeBanner: false,
-        home: const Home()
-    ),
-  );
+  runApp(const MaterialApp(
+    title: "WhatsApp Web",
+    debugShowCheckedModeBanner: false,
+    home: Login(),
+  ));
 }
